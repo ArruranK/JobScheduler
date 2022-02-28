@@ -1,7 +1,7 @@
-assgn1: assgn1.o log.o job
-	gcc -o assgn1 assgn1.o log.o 
-assgn1.o: assgn1.c log.h
-	gcc -c assgn1.c 
+scheduler: scheduler.o log.o job
+	gcc -o scheduler scheduler.o log.o 
+scheduler.o: scheduler.c log.h
+	gcc -c scheduler.c 
 log.o: log.c log.h
 	gcc -c log.c 
 job.o: job.c log.h
